@@ -1,0 +1,131 @@
+:root {
+    --color-primary-a0: #ffffff;
+    --color-primary-a10: #fff5cc;
+    --color-primary-a20: #ffea98;
+    --color-primary-a30: #ffe161;
+    --color-primary-a40: #ffd700;
+    --color-primary-a50: #b99c16;
+    --color-primary-a60: #786518;
+    --color-primary-a70: #3d3313;
+    --color-primary-a100: #000000;
+
+    --color-bg-a0: #ffffff;
+    --color-bg-a10: #dfdfdf;
+    --color-bg-a20: #c0c0c0;
+    --color-bg-a30: #a2a2a2;
+    --color-bg-a40: #858585;
+    --color-bg-a50: #696969;
+    --color-bg-a60: #4e4e4e;
+    --color-bg-a70: #353535;
+    --color-bg-a80: #1e1e1e;
+
+    --Theme-Colour-0: #0e0b16;
+    --Theme-Colour-1: #151321;
+    --Theme-Colour-2: #1d1a2b;
+    --Theme-Colour-3: #242136;
+
+    --Info-Color: dodgerblue;
+    --Error-Color: red;
+
+    --Heading-Color: darkgray;
+    --Label-Color: dimgray;
+    --Button-Label-Color: gray;
+    --Input-Color: darkgray;
+
+    color-scheme: dark;
+}
+
+/* The text color for the headers */
+#kc-page-title, #kc-attempted-username {
+    color: var(--Heading-Color);
+}
+
+/* The text color for labels */
+.kcLabelClass {
+    color: var(--Label-Color);
+}
+
+/* The background color for the entire page */
+.kcBodyClass {
+    background-color: var(--Theme-Colour-0);
+}
+
+/* The background color for the footer and content of the login form card */
+#kc-info-wrapper, .kcFormCardClass {
+    background-color: var(--Theme-Colour-1);
+}
+
+/* Any input fields */
+.kcInputClass {
+    background-color: var(--Theme-Colour-2);
+    color: var(--Input-Color);
+
+    border: 0;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* The background color for input groups. This mostly affects the password input since it's grouped with the show password button */
+.kcInputGroup {
+    background-color: inherit;
+}
+
+/* Remove the border radius on the right side of the password textbox so it's flush with the show password button */
+#password {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* The show password button */
+.kcFormPasswordVisibilityButtonClass:enabled {
+    background-color: var(--Theme-Colour-2);
+    color: var(--Label-Color);
+}
+.kcFormPasswordVisibilityButtonClass:after {
+    border-color: var(--Theme-Colour-3);
+}
+
+/* The social login button text color */
+.kcFormSocialAccountNameClass {
+    color: var(--Button-Label-Color);
+}
+/* Remove the social login button border */
+.kcFormSocialAccountListButtonClass:after {
+    border: none;
+}
+/* The background for the social login/provider buttons */
+.kcFormSocialAccountListButtonClass:defined {
+    background-color: var(--Theme-Colour-2);
+}
+/* The hover background for the social login/provider buttons */
+.kcFormSocialAccountListButtonClass:hover {
+    background-color: var(--Theme-Colour-3);
+}
+
+/* The background color for the alert message */
+.kcAlertClass {
+    background-color: var(--Theme-Colour-2);
+}
+.kcAlertTitleClass {
+    /*color: red;*/
+    color: inherit;
+}
+
+/* The text and icon color for the info alert message */
+.pf-m-info, .kcFeedbackInfoIcon {
+    color: var(--Info-Color);
+}
+/* The text and icon color for the danger and error alert messages */
+.pf-m-danger, .pf-m-error, .kcFeedbackErrorIcon {
+    color: var(--Error-Color);
+}
+
+/* The button settings. This is intended for the login button */
+.kcButtonClass:enabled {
+    background-color: var(--Theme-Colour-2);
+    color: var(--Button-Label-Color);
+    border-radius: 6px;
+}
+.kcButtonClass:hover {
+    background-color: var(--Theme-Colour-3);
+}
