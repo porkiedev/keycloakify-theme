@@ -41,9 +41,4 @@ export default function KcPage(props: { kcContext: KcContext }) {
 
 const classes = {
     kcHtmlClass: "",
-    // kcBodyClass: "",
-    // kcFormSocialAccountListClass: "",
-    // kcSignUpClass: "",
-    // kcFormCardClass: "",
-    // kcInputClass: ""
 } satisfies { [key in ClassKey]?: string };
