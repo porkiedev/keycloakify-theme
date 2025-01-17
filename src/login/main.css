@@ -101,7 +101,7 @@
 }
 
 /* The button settings. This is intended for the login button */
-.kcButtonClass:enabled {
+.kcButtonClass:enabled, .kcButtonClass:disabled {
     background-color: var(--Theme-Colour-2);
     color: var(--Button-Label-Color);
     border-radius: 6px;
