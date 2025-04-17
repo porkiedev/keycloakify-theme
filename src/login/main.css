@@ -40,7 +40,7 @@
     background-color: var(--Theme-Colour-2);
     color: var(--Input-Color);
 
-    border: 0;
+    border: 1px solid var(--Theme-Colour-3);
     border-radius: 6px;
     outline: none;
 }
